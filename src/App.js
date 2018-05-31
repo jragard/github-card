@@ -80,11 +80,14 @@ class App extends Component {
 
     return (
       <div className="App">
-        
-        <button className="btn" type="button" onClick={this.buttonClick}>Toggle User</button>
-        <div>
-        { active ? profile : emptyDiv }
+
+        <div className="btnDiv">
+          <button className="btn" type="button" onClick={this.buttonClick}>Toggle User</button>
         </div>
+
+       
+        { active ? profile : emptyDiv }
+        
           {/* {this.state.active ? <img src={this.state.avatar_url} alt={""}/> : {}} */}
         
       </div>
